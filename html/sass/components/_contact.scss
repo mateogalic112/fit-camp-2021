@@ -1,0 +1,59 @@
+/* =============================================================================
+   CONTACT (components/_contact.scss)
+   ========================================================================== */
+
+.c-contact__form {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-contact__form--input {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    padding: .5rem 2rem;
+    border: 0;
+    outline: none;
+    background-color: $secondary-color;
+    color: $black-color;
+    transition: box-shadow .3s;
+}
+
+.c-contact__form--input:hover,
+.c-contact__form--input:active,
+.c-contact__form--input:focus {
+    box-shadow: 0 0 .5rem .1rem $black-color;
+}
+
+.c-contact__form--textarea {
+    resize: none;
+    height: 7.5rem;
+}
+
+.c-contact__form--btn {
+    background-color: lighten( $primary-color, 15% );
+    border: none;
+    outline: none;
+    padding: .6rem 4rem;
+    border-radius: 1.5rem;
+    align-self: flex-end;
+    width: 100%;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: $black-color;
+    cursor: pointer;
+    transition: background-color .3s, box-shadow .3s;
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+.c-contact__form--btn:hover,
+.c-contact__form--btn:focus {
+    background-color: $primary-color;
+    box-shadow: 0 0 .5rem .1rem $black-color;
+    color: $white-color;
+}

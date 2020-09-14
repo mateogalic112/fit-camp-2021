@@ -1,0 +1,13 @@
+/* =============================================================================
+   SECTION (elements/_section.scss)
+   ========================================================================== */
+
+section {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+    @media (min-width: 768px) {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}

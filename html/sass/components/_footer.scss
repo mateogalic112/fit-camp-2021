@@ -1,0 +1,78 @@
+/* =============================================================================
+   FOOTER (components/_footer.scss)
+   ========================================================================== */
+
+.c-footer {
+    width: 100%;
+    height: 7.5rem;
+    background-color: $secondary-color;
+    color: $black-color;
+    display: flex;
+    align-items: center;
+}
+
+.c-footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-footer__nav {
+    display: none;
+    
+    @media (min-width: 1200px) {
+        display: flex;
+        flex: auto;
+    }
+}
+
+.c-footer__nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 6.5rem;
+    padding-left: 7.5rem;
+}
+
+.c-footer__nav-item {
+    display: block;
+    text-transform: uppercase;
+}
+
+.c-footer__nav-link {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.c-footer__contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 576px) {
+        flex-direction: row;
+    }
+
+    @media (min-width: 1200px) {
+        width: auto;
+    }
+}
+
+.c-footer__mobile,
+.c-footer__mail {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+    p {
+        margin: 0;
+        margin-left: .5rem;
+    }
+
+    @media (min-width: 576px) {
+        margin-left: 2rem;
+    }
+}

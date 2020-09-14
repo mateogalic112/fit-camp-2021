@@ -1,0 +1,44 @@
+/* =============================================================================
+   SECTION TITLE (components/_title.scss)
+   ========================================================================== */
+
+.c-title__text {
+    text-align: center;
+}
+
+.c-title__icon {
+    font-size: 2.25rem;
+    color: $secondary-color;
+    margin-bottom: 1.25rem;
+
+    @media (min-width: 768px) {
+        font-size: 3rem;
+        margin-bottom: 1.75rem;
+    }
+}
+
+.c-title__title {
+    margin-bottom: 1.25rem;
+    font-size: 1.5rem;
+
+    @media (min-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.c-title__paragraph {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1.75rem;
+        left: 50%;
+        transform: translateX( -50% );
+        width: 10rem;
+        height: 2px;
+        border-radius: 20px;
+        background-color: $secondary-color;
+    }
+}

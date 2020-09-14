@@ -1,0 +1,47 @@
+/* =============================================================================
+   SLIDER (components/_slider.scss)
+   ========================================================================== */
+
+.c-slider__arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+
+    i + i {
+        margin-top: 2rem;
+    }
+
+    @media (min-width: 992px) {
+        font-size: 1.5rem;
+    }
+}
+
+.c-slider__arrows--parallax {
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+
+.c-slider__arrow--top,
+.c-slider__arrow--down {
+    cursor: pointer;
+}
+
+/* SWIPER */
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    background-color: $secondary-color;
+}
+
+.swiper-pagination-bullet {
+    background-color: $white-color !important;
+}
+
+.disabled_swiper_button {
+    opacity: .3;
+    cursor: auto;
+    pointer-events: none;
+}
